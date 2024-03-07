@@ -8,8 +8,8 @@
 
 #define _XTAL_FREQ   20000000
 
-
-void main() {
+void main() 
+{
      TRISA.B1 = 1;
      TRISA.B2 = 1;
 
@@ -45,7 +45,6 @@ void main() {
               ForwardRight = 0;
               BackwardRight = 0;
               Delay_ms(20);
-
              }
 
              else if(InnerLeft == 1 && InnerRight == 0) // Mobot: Turn Left
@@ -77,6 +76,5 @@ void main() {
               BackwardRight = 1;
               Delay_ms(10);
              }
-
      }
 }
