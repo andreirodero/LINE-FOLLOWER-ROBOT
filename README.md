@@ -1,7 +1,7 @@
 # Line Follower Robot
 
 Group Project for EECE116L
-- Microctroller: PIC16F84A
+- Microcontroller: PIC16F84A
 - Sensor: Infrared Sensor Module
 - Power Supply: LM317 Adjustable Voltage Regulator
 - Crystal Oscillator: 20 MHz
