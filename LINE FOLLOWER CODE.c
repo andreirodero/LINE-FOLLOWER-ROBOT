@@ -3,8 +3,8 @@
 #define ForwardRight PORTB.B2
 #define BackwardRight PORTB.B3
 
-#define InnerRight PORTA.B1
-#define InnerLeft PORTA.B2
+#define Right PORTA.B1
+#define Left PORTA.B2
 
 #define _XTAL_FREQ   20000000
 
@@ -17,7 +17,7 @@ void main()
 
      while(1) // Black = 1, White = 0
      {
-             if(InnerLeft == 0 && InnerRight == 0) // Mobot: Move Forward
+             if(Left == 0 && Right == 0) // Mobot: Move Forward
              {
               ForwardLeft = 1;
               BackwardLeft = 0;
@@ -32,7 +32,7 @@ void main()
               Delay_ms(30);
              }
 
-             else if(InnerLeft == 0 && InnerRight == 1) // Mobot: Turn Right
+             else if(Left == 0 && Right == 1) // Mobot: Turn Right
              {
               ForwardLeft = 1;
               BackwardLeft = 0;
@@ -47,7 +47,7 @@ void main()
               Delay_ms(20);
              }
 
-             else if(InnerLeft == 1 && InnerRight == 0) // Mobot: Turn Left
+             else if(Left == 1 && Right == 0) // Mobot: Turn Left
              {
               ForwardLeft = 0;
               BackwardLeft = 1;
